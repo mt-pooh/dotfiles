@@ -44,3 +44,10 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Chiel92/vim-autoformat'
+
+[[plugins]]
+repo = 'lifepillar/pgsql.vim'
+hook_add = '''
+  let g:sql_type_default = 'pgsql'
+'''
+
