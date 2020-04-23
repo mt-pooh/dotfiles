@@ -41,3 +41,6 @@ repo = 'osyo-manga/vim-anzu'
 hook_add = '''
   source ~/.config/nvim/plugins/anzu.vim
 '''
+
+[[plugins]]
+repo = 'Chiel92/vim-autoformat'
