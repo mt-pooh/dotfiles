@@ -56,3 +56,7 @@ repo = 'vim-airline/vim-airline'
 hook_add = '''
   source ~/.config/nvim/plugins/airline.vim
 '''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
