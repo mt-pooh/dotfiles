@@ -7,7 +7,6 @@ let g:airline_mode_map = {
     \ 'c'  : 'C',
     \ 'v'  : 'V',
     \ 'V'  : 'V',
-    \ '' : 'V',
     \ 's'  : 'S',
     \ 'S'  : 'S',
     \ '' : 'S',

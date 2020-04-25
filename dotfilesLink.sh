@@ -6,7 +6,7 @@ ln -sf ~/dotfiles/jupyter/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook
 
 # nvim参照: https://qiita.com/Ress/items/7e71e007cf8d41a07a1a
 # nvim準備
-# pyenv　
+# pyenv
 #git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 #sudo ~/.pyenv/plugins/python-build/install.sh
 #pyenv install 3.7.2
