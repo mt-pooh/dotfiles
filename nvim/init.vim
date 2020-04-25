@@ -4,8 +4,15 @@ set tabstop=4          "タブを何文字の空白に変換するか
 set shiftwidth=4       "自動インデント時に入力する空白の数
 set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
-set clipboard=unnamed  "yank した文字列をクリップボードにコピー
+set clipboard+=unnamedplus  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
+set cursorline         "カーソルラインを表示"
+set wildmenu           "ステータスラインにコマンド候補を表示"
+
+"折り返し時に表示行単位での移動できるようにする"
+nnoremap j gj          
+nnoremap k gk
+
 
 " Search and Replace
 set ignorecase
