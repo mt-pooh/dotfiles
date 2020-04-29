@@ -10,9 +10,15 @@ set cursorline         "カーソルラインを表示"
 set wildmenu           "ステータスラインにコマンド候補を表示"
 
 "折り返し時に表示行単位での移動できるようにする"
-nnoremap j gj          
+nnoremap j gj
 nnoremap k gk
 
+"タブ、空白、改行の可視化
+set list
+"全角スペースをハイライト表示
+function! ZenkakuSpace()
+  highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
+endfunction
 
 " Search and Replace
 set ignorecase

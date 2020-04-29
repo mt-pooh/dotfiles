@@ -5,8 +5,33 @@ hook_add = '''
   source ~/.config/nvim/plugins/deoplete.vim
 '''
 
+
+[[plugins]]
+repo = 'kristijanhusak/vim-dadbod-completion'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+on_ft = ['python']
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = ['markdown']
+
+[[plugins]]
+repo = 'elzr/vim-json'
+hook_add = '''
+  let g:vim_json_syntax_conceal = 0
+'''
+on_ft = ['json']
+
+# ディレクトリーツリーを表示
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   source ~/.config/nvim/plugins/nerdtree.vim
 '''
+
