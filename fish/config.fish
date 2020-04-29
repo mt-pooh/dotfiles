@@ -22,3 +22,6 @@ alias gc='git commit'
 alias gd='git diff'
 alias gca='git commit --amend'
 alias glo='git log --oneline'
+alias lg='lazygit'
+
+set -x PSQL_EDITOR 'nvim + "set syntax=sql"'
