@@ -14,6 +14,9 @@ hook_add = '''
 # syntax checker
 [[plugins]]
 repo = 'w0rp/ale'
+hook_add = '''
+  source ~/.config/nvim/plugins/ale.vim
+'''
 
 # git 差分表示
 [[plugins]]
