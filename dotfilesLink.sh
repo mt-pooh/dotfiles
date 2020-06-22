@@ -1,6 +1,5 @@
 #!/bin/sh
-ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
-ln -sf ~/dotfiles/fish/fishfile ~/.config/fish/fishfile
+ln -sf ~/dotfiles/fish ~/.config/fish
 ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/jupyter/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
