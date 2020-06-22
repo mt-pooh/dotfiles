@@ -13,3 +13,9 @@ on_ft = ['css']
 [[plugins]]
 repo = 'ap/vim-css-color'
 on_ft = ['css']
+
+# 閉じタグ自動挿入
+[[plugins]]
+repo = 'alvan/vim-closetag'
+on_ft = ['html', 'djangohtml']
+
