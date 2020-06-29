@@ -13,6 +13,9 @@ set wildmenu           "ステータスラインにコマンド候補を表示"
 nnoremap j gj
 nnoremap k gk
 
+" ESCで保存もする
+imap <esc> <esc>:w<cr>
+
 "タブ、空白、改行の可視化
 set list
 "全角スペースをハイライト表示
