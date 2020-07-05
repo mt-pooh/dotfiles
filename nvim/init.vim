@@ -13,8 +13,12 @@ set wildmenu           "ステータスラインにコマンド候補を表示"
 nnoremap j gj
 nnoremap k gk
 
-" ESCで保存もする
-imap <esc> <esc>:w<cr>
+" Escを2回押すとハイライトを消す
+nnoremap <Esc><Esc> :nohlsearch<CR>
+" : => ;
+nnoremap ; :
+" jjでesc
+inoremap <silent> jj <ESC>
 
 "タブ、空白、改行の可視化
 set list
