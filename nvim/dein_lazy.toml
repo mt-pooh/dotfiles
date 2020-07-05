@@ -13,6 +13,10 @@ repo = 'deoplete-plugins/deoplete-jedi'
 on_ft = ['python']
 
 [[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript']
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
