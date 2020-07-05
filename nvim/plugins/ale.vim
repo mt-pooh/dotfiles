@@ -24,7 +24,7 @@ let g:ale_keep_list_window_open = 0
 let g:ale_linters = {
 \   'python': ['flake8'],
 \   'javascript': ['eslint'],
-\   'typescript': ['eslint'],
+\   'typescript': ['tsserver', 'tslint'],
 \}
 
 " 自動整形
@@ -32,6 +32,7 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'python': ['autopep8', 'isort'],
+\   'html': ['prettier'],
 \   'markdown': [
 \     {buffer, lines -> {'command': 'textlint -c ~/.config/textlintrc -o /dev/null --fix --no-color --quiet %t', 'read_temporary_file': 1}}
 \    ],
