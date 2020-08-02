@@ -1,34 +1,22 @@
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_event = 'InsertEnter'
-hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.vim
-'''
-# Completion
-[[plugins]]
-repo = 'kristijanhusak/vim-dadbod-completion'
-
-# syntax highlight
-[[plugins]]
-repo = 'deoplete-plugins/deoplete-jedi'
-on_ft = ['python']
-
+# typescript
+## syntax highlight
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript']
-
+## syntax highlight for JSX in Typescript
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
-on_ft = ['typescript']
-
+# toml
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
+# markdown
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['markdown']
 
+# json
 [[plugins]]
 repo = 'elzr/vim-json'
 hook_add = '''

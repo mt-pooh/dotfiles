@@ -11,11 +11,12 @@ hook_add = '''
   colorscheme onedark
 '''
 
-# syntax checker
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'neoclide/coc.nvim'
+merge = 0
+rev = 'release'
 hook_add = '''
-  source ~/.config/nvim/plugins/ale.vim
+  source ~/.config/nvim/plugins/coc.vim
 '''
 
 # git 差分表示
