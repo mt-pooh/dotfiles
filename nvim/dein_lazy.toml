@@ -4,16 +4,21 @@ on_event = 'InsertEnter'
 hook_add = '''
   source ~/.config/nvim/plugins/deoplete.vim
 '''
-
+# Completion
 [[plugins]]
 repo = 'kristijanhusak/vim-dadbod-completion'
 
+# syntax highlight
 [[plugins]]
 repo = 'deoplete-plugins/deoplete-jedi'
 on_ft = ['python']
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript']
+
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
 on_ft = ['typescript']
 
 [[plugins]]

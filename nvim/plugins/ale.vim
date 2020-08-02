@@ -32,7 +32,9 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'python': ['autopep8', 'isort'],
+\   'vue': ['eslint'],
 \   'html': ['prettier'],
+\   'scss': ['prettier'],
 \   'markdown': [
 \     {buffer, lines -> {'command': 'textlint -c ~/.config/textlintrc -o /dev/null --fix --no-color --quiet %t', 'read_temporary_file': 1}}
 \    ],
