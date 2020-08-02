@@ -6,9 +6,9 @@ if not functions -q fisher
 end
 
 # pyenv
-set PYENV_ROOT ~/.pyenv/bin
-set -x PATH $PYENV_ROOT $PATH
-status --is-interactive; and pyenv init - | source
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+pyenv init - | source
 
 # nvim
 set -x XDG_CONFIG_HOME $HOME/.config
