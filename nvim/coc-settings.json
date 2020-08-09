@@ -1,0 +1,19 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "python"
+      ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "languageserver": {
+      "dockerfile": {
+            "command": "docker-langserver",
+            "filetypes": ["dockerfile"],
+            "args": ["--stdio"]
+          }
+    },
+    "python.jediEnabled": false
+}
