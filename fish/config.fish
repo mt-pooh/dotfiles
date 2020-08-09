@@ -14,6 +14,10 @@ pyenv init - | source
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x XDG_CACHE_HOME $HOME/.cache
 
+# fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+
 # alias
 alias ..='cd ..'
 alias vi='nvim'
@@ -23,5 +27,6 @@ alias gd='git diff'
 alias gca='git commit --amend'
 alias glo='git log --oneline'
 alias lg='lazygit'
+alias relogin='exec $SHELL -l'
 
 set -x PSQL_EDITOR 'nvim + "set syntax=sql"'
