@@ -1,4 +1,11 @@
-
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-python',
+  \ 'coc-docker',
+  \ 'coc-json'
+  \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
 
