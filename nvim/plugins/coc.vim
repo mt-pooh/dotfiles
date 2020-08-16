@@ -3,6 +3,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-python',
+  \ 'coc-go',
   \ 'coc-docker',
   \ 'coc-json'
   \ ]
