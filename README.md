@@ -16,13 +16,9 @@ sudo apt-get install fish
 # install pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
-sudo apt install -y build-essential # c++コンパイラ
-sudo apt install -y libffi-dev
-sudo apt install -y libssl-dev # openssl
-sudo apt install -y zlib1g-dev
-sudo apt install -y liblzma-dev
-sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev # bz2, readline, sqlite3
-sudo apt install -y git
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 # symlink
 ./dotfilesLink.sh
