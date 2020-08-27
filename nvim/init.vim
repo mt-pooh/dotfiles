@@ -8,6 +8,7 @@ set clipboard+=unnamedplus  "yank した文字列をクリップボードにコ�
 set hls                "検索した文字をハイライトする
 set cursorline         "カーソルラインを表示"
 set wildmenu           "ステータスラインにコマンド候補を表示"
+set mouse=a            "マウス操作を有効化"
 
 "折り返し時に表示行単位での移動できるようにする"
 nnoremap j gj
