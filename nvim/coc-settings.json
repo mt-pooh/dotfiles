@@ -8,6 +8,7 @@
       ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
+  "coc.preferences.jumpCommand": "tab drop",
   "languageserver": {
       "dockerfile": {
             "command": "docker-langserver",
