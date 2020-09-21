@@ -6,6 +6,7 @@ let g:coc_global_extensions = [
   \ 'coc-go',
   \ 'coc-docker',
   \ 'coc-db',
+  \ 'coc-fish',
   \ 'coc-json'
   \ ]
 " TextEdit might fail if hidden is not set.
