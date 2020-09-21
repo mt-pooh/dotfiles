@@ -7,7 +7,7 @@ end
 
 # pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
-set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+# set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 pyenv init - | source
 
 # nvim
@@ -17,10 +17,17 @@ set -x XDG_CACHE_HOME $HOME/.cache
 # fzf
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
-set -Ux EDITOR nvim # default editor
+set -U EDITOR nvim # default editor
+set -U FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
+set -U FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 
 # Rust
-set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
+# set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
+
+# starship
+# install
+# curl -fsSL https://starship.rs/install.sh | bash
+starship init fish | source
 
 # alias
 alias ..='cd ..'
@@ -36,3 +43,23 @@ alias ls='exa'
 alias ll='exa -ahl --git'
 
 set -x PSQL_EDITOR 'nvim + "set syntax=sql"'
+
+# ------------------------------------
+# # docker alias 
+# # ------------------------------------
+
+alias d="docker"
+
+alias dps="docker ps"
+
+alias dpa="docker ps -a"
+
+alias di="docker images"
+
+alias dex="docker exec -i -t"
+
+# # ------------------------------------
+# # docker-compose alias 
+# # ------------------------------------
+
+alias dco="docker-compose"
