@@ -78,3 +78,11 @@ repo = 'tpope/vim-dadbod'
 [[plugins]]
 repo = 'kristijanhusak/vim-dadbod-ui'
 
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depens = 'fzf'
