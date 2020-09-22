@@ -1,9 +1,5 @@
-nnoremap [Fzf] <Nop>
-nmap <Leader>f [Fzf]
-nnoremap [Fzf]f :<C-u>Files<CR>
-nnoremap [Fzf]g :<C-u>GFiles<CR>
-nnoremap [Fzf]G :<C-u>GFiles?<CR>
-nnoremap [Fzf]b :<C-u>Buffers<CR>
+nnoremap <silent> <C-p> :GFiles<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
 
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(

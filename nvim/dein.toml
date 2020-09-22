@@ -86,3 +86,6 @@ merged = 0
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depens = 'fzf'
+hook_add = '''
+  source ~/.config/nvim/plugins/fzf.vim
+'''
