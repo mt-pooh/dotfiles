@@ -21,6 +21,11 @@ nnoremap ; :
 " jjでesc
 inoremap <silent> jj <ESC>
 
+" バッファの切り替え
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <silent>bb :b#<CR>
+
 "タブ、空白、改行の可視化
 set list
 "全角スペースをハイライト表示
