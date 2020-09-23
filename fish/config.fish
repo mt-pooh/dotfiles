@@ -31,11 +31,6 @@ starship init fish | source
 # alias
 alias ..='cd ..'
 alias vi='nvim'
-alias gst='git status'
-alias gc='git commit'
-alias gd='git diff'
-alias gca='git commit --amend'
-alias glo='git log --oneline'
 alias lg='lazygit'
 alias relogin='exec $SHELL -l'
 alias ls='exa'
@@ -43,22 +38,19 @@ alias ll='exa -ahl --git'
 
 set -x PSQL_EDITOR 'nvim + "set syntax=sql"'
 
-# ------------------------------------
-# # docker alias 
+# # ------------------------------------
+# # abbr 
 # # ------------------------------------
 
-alias d="docker"
+abbr -a gst git status
+abbr -a gc git commit
+abbr -a gd git diff
+abbr -a gca git commit --amend
+abbr -a glo git log --oneline
 
-alias dps="docker ps"
-
-alias dpa="docker ps -a"
-
-alias di="docker images"
-
-alias dex="docker exec -i -t"
-
-# # ------------------------------------
-# # docker-compose alias 
-# # ------------------------------------
-
-alias dco="docker-compose"
+abbr -a d docker
+abbr -a dps docker ps
+abbr -a dpa docker ps -a
+abbr -a di docker images
+abbr -a dex docker exec -i -t
+abbr -a dco docker-compose
