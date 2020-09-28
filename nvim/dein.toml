@@ -34,6 +34,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'shumphrey/fugitive-gitlab.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/fugitive-gitlab.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
