@@ -16,5 +16,8 @@
             "args": ["--stdio"]
           }
     },
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "yaml.schemas": {
+      "kubernetes": "/*.yaml"
+  }
 }
