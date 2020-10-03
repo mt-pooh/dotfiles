@@ -4,6 +4,7 @@
         "javascriptreact",
         "typescript",
         "typescriptreact",
+        "yaml",
         "python"
       ],
   "tsserver.formatOnType": true,
