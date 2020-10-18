@@ -7,6 +7,7 @@ end
 
 # pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
+# set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_pathsV_ROOT/bin
 pyenv init - | source
 
 # nvim
