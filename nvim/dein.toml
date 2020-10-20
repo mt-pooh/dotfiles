@@ -5,10 +5,11 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 
+# colorscheme
 [[plugins]]
-repo = 'joshdick/onedark.vim'
+repo = 'ghifarit53/tokyonight-vim'
 hook_add = '''
-  colorscheme onedark
+  colorscheme tokyonight
 '''
 
 [[plugins]]
