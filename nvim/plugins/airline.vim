@@ -15,7 +15,7 @@ let g:airline_mode_map = {
 " パワーラインでかっこよく
 let g:airline_powerline_fonts = 1
 " カラーテーマ指定してかっこよく
-let g:airline_theme = 'badwolf'
+let g:airline_theme = 'tokyonight'
 " タブバーをかっこよく
 let g:airline#extensions#tabline#enabled = 1
 
