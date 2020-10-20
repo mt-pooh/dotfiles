@@ -29,6 +29,12 @@ set -U FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 # curl -fsSL https://starship.rs/install.sh | bash
 starship init fish | source
 
+# WSLでGUIが使えるように
+if uname -r | grep 'microsoft' > /dev/null
+  set -l LOCAL_IP (cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+  set -xg DISPLAY $LOCAL_IP:0
+end
+
 # alias
 alias ..='cd ..'
 alias vi='nvim'
