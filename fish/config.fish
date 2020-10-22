@@ -35,9 +35,6 @@ if uname -r | grep 'microsoft' > /dev/null
   set -xg DISPLAY $LOCAL_IP:0
 end
 
-# vim key bind
-set fish_key_bindings fish_user_key_bindings
-
 # alias
 alias ..='cd ..'
 alias vi='nvim'
