@@ -5,6 +5,7 @@
         "typescript",
         "typescriptreact",
         "yaml",
+        "fish",
         "python"
       ],
   "tsserver.formatOnType": true,
