@@ -1,27 +1,30 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "yaml",
-        "pairs",
-        "git",
-        "fish",
-        "python"
-      ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "json",
+    "toml",
+    "pairs",
+    "git",
+    "fish",
+    "python",
+    "go"
+  ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.jumpCommand": "tab drop",
   "languageserver": {
-      "dockerfile": {
-            "command": "docker-langserver",
-            "filetypes": ["dockerfile"],
-            "args": ["--stdio"]
-          }
-    },
-    "python.jediEnabled": false,
-    "yaml.schemas": {
-      "kubernetes": "/*.yaml"
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    }
+  },
+  "python.jediEnabled": false,
+  "yaml.schemas": {
+    "kubernetes": "/*.yaml"
   }
 }
