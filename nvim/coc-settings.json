@@ -5,6 +5,8 @@
         "typescript",
         "typescriptreact",
         "yaml",
+        "pairs",
+        "git",
         "fish",
         "python"
       ],
