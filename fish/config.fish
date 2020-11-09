@@ -40,8 +40,8 @@ alias ..='cd ..'
 alias vi='nvim'
 alias lg='lazygit'
 alias relogin='exec $SHELL -l'
-alias ls='exa'
-alias ll='exa -ahl --git'
+alias ls='exa --icons'
+alias ll='exa -ahl --git --icons'
 
 set -x PSQL_EDITOR 'nvim + "set syntax=sql"'
 
