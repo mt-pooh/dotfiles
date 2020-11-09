@@ -7,9 +7,18 @@ on_ft = ['typescript']
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
 
-# ディレクトリーツリーを表示
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+depends = ['defx-git', 'defx-icons']
 hook_add = '''
-  source ~/.config/nvim/plugins/nerdtree.vim
+  source ~/.config/nvim/plugins/defx.vim
 '''
