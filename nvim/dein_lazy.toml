@@ -6,19 +6,3 @@ on_ft = ['typescript']
 ## syntax highlight for JSX in Typescript
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
-
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
-[[plugins]]
-repo = 'kristijanhusak/defx-icons'
-
-[[plugins]]
-repo = 'kristijanhusak/defx-git'
-
-[[plugins]]
-repo = 'Shougo/defx.nvim'
-depends = ['defx-git', 'defx-icons']
-hook_add = '''
-  source ~/.config/nvim/plugins/defx.vim
-'''
