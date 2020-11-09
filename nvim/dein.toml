@@ -83,3 +83,13 @@ depens = 'fzf'
 hook_add = '''
   source ~/.config/nvim/plugins/fzf.vim
 '''
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
