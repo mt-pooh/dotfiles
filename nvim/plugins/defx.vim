@@ -1,5 +1,6 @@
 " 【Ctrl + n】 defx.nvimを起動
-nnoremap <silent><C-n> :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
+nnoremap <silent><C-n> :<C-u>Defx<CR>
+
 autocmd FileType defx call s:defx_my_settings()
     function! s:defx_my_settings() abort
       nnoremap <silent><buffer><expr> <CR>
@@ -68,24 +69,26 @@ autocmd FileType defx call s:defx_my_settings()
       \ defx#do_action('change_vim_cwd')
 endfunction
 
+call defx#custom#column('icon', {
+      \ 'directory_icon': '▸',
+      \ 'opened_icon': '▾',
+      \ 'root_icon': ' ',
+      \ })
+
+call defx#custom#column('filename', {
+      \ 'min_width': 40,
+      \ 'max_width': 40,
+      \ })
+
+call defx#custom#column('mark', {
+      \ 'readonly_icon': '✗',
+      \ 'selected_icon': '✓',
+      \ })
+
 call defx#custom#option('_', {
-  \ 'winwidth': 40,
-  \ 'split': 'vertical',
-  \ 'direction': 'topleft',
+  \ 'columns': 'indent:git:icons:filename',
   \ 'show_ignored_files': 1,
   \ 'buffer_name': 'exproler',
   \ 'toggle': 1,
   \ 'resume': 1,
-  \ 'columns': 'indent:git:icons:filename:mark',
-  \ })
-call defx#custom#column('git', 'indicators', {
-  \ 'Modified'  : '✹',
-  \ 'Staged'    : '✚',
-  \ 'Untracked' : '✭',
-  \ 'Renamed'   : '➜',
-  \ 'Unmerged'  : '═',
-  \ 'Ignored'   : '☒',
-  \ 'Deleted'   : '✖',
-  \ 'Unknown'   : '?'
-  \ })
-
+      \ })

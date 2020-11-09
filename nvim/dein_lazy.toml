@@ -6,3 +6,10 @@ on_ft = ['typescript']
 ## syntax highlight for JSX in Typescript
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
+
+# ディレクトリーツリーを表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  source ~/.config/nvim/plugins/nerdtree.vim
+'''
