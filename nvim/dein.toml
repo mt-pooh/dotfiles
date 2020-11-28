@@ -37,6 +37,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'APZelos/blamer.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugins/blamer.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
