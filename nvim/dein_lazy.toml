@@ -12,3 +12,10 @@ repo = 'lambdalisue/fern.vim'
 hook_add = '''
   source ~/.config/nvim/plugins/fern.vim
 '''
+
+[[plugins]]
+repo = 'lambdalisue/fern-git-status.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/fern-git-status.vim
+'''
+
