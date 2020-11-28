@@ -7,24 +7,19 @@ on_ft = ['typescript']
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
 
-
-
 # ファイラー
 [[plugins]]
 repo = 'lambdalisue/fern.vim'
-depends = ['fern-renderer-nerdfont.vim', 'fern-git-status.vim']
+depends = ['fern-renderer-nerdfont.vim']
 hook_add = '''
   source ~/.config/nvim/plugins/fern.vim
 '''
 
-[[plugins]]
-repo = 'lambdalisue/fern-renderer-nerdfont.vim'
 
 [[plugins]]
 repo = 'lambdalisue/nerdfont.vim'
 
 [[plugins]]
-repo = 'lambdalisue/fern-git-status.vim'
-hook_add = '''
-  source ~/.config/nvim/plugins/fern-git-status.vim
-'''
+repo = 'lambdalisue/fern-renderer-nerdfont.vim'
+depends = ['nerdfont.vim']
+

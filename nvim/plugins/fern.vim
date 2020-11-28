@@ -1,5 +1,3 @@
-" アイコン表示
-let g:fern#renderer = "nerdfont"
 " Disable netrw.
 let g:loaded_netrw  = 1
 let g:loaded_netrwPlugin = 1
@@ -54,3 +52,6 @@ augroup FernGroup
   autocmd!
   autocmd FileType fern call FernInit()
 augroup END
+
+" display icon
+let g:fern#renderer = "nerdfont"
