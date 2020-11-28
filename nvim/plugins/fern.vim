@@ -1,6 +1,5 @@
 " アイコン表示
-" let g:fern#renderer = "nerdfont"
-" let g:fern#renderer = "devicons"
+let g:fern#renderer = "nerdfont"
 " Disable netrw.
 let g:loaded_netrw  = 1
 let g:loaded_netrwPlugin = 1
