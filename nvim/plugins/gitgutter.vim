@@ -1,5 +1,5 @@
 set signcolumn=yes
-set updatetime=1000
+set updatetime=300
 
 nnoremap [gitgutter] <Nop>
 nmap <Leader>h [gitgutter]
