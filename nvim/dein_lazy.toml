@@ -23,3 +23,8 @@ repo = 'lambdalisue/nerdfont.vim'
 repo = 'lambdalisue/fern-renderer-nerdfont.vim'
 depends = ['nerdfont.vim']
 
+[[plugins]]
+repo = 'kannokanno/previm'
+hook_add = '''
+  let g:previm_open_cmd = 'open -a Google\ Chrome'
+'''
