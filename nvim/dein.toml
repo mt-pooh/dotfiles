@@ -38,11 +38,11 @@ hook_add = '''
   source ~/.config/nvim/plugins/fugitive-gitlab.vim
 '''
 
-[[plugins]]
-repo = 'APZelos/blamer.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/blamer.vim
-'''
+# [[plugins]]
+# repo = 'APZelos/blamer.nvim'
+# hook_add = '''
+  # source ~/.config/nvim/plugins/blamer.vim
+# '''
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
