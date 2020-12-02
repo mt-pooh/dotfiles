@@ -26,5 +26,6 @@
   "python.jediEnabled": false,
   "yaml.schemas": {
     "kubernetes": "/*.yaml"
-  }
+  },
+  "diagnostic.errorSign": "💩"
 }
