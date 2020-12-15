@@ -6,7 +6,8 @@ set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
 set clipboard+=unnamedplus  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
-set cursorline         "カーソルラインを表示"
+set cursorline         "横のカーソルラインを表示"
+set cursorcolumn       "縦のカーソルラインを表示"
 set wildmenu           "ステータスラインにコマンド候補を表示"
 set mouse=a            "マウス操作を有効化"
 
