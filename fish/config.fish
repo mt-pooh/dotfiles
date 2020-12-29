@@ -5,6 +5,11 @@ if not functions -q fisher
     fish -c fisher
 end
 
+# M1 Mac用homebrewのPATHを通す
+if uname | grep 'Darwin' > /dev/null
+  set PATH /opt/homebrew/bin /opt/homebrew/opt/python@3.9/libexec/bin $PATH
+end
+
 # pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
 # set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_pathsV_ROOT/bin
@@ -22,7 +27,13 @@ set -U FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -U FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 
 # Rust
-# set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
+set PATH $HOME/.cargo/bin $PATH
+
+# GO
+set -Ux GOPATH $HOME
+set PATH $GOPATH/bin $PATH
+# ghqのrootディレクトリを設定
+# git config --global ghq.root ~/repos
 
 # starship
 # install
