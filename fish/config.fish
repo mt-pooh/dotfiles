@@ -30,7 +30,7 @@ set -U FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 set PATH $HOME/.cargo/bin $PATH
 
 # GO
-set -Ux GOPATH $HOME
+set -Ux GOPATH $HOME/go
 set PATH $GOPATH/bin $PATH
 # ghqのrootディレクトリを設定
 # git config --global ghq.root ~/repos
