@@ -1,4 +1,7 @@
 #!/bin/sh
+mkdir -p ~/.config
+mkdir -p ~/.jupyter
+
 ln -sf ~/dotfiles/fish ~/.config/fish
 ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/jupyter/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py
