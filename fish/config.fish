@@ -44,6 +44,7 @@ starship init fish | source
 if uname -r | grep 'microsoft' > /dev/null
   set -l LOCAL_IP (cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
   set -xg DISPLAY $LOCAL_IP:0
+  set PATH $HOME/nvim-linux64/bin $PATH
 end
 
 # alias

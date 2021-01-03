@@ -38,12 +38,6 @@ hook_add = '''
   source ~/.config/nvim/plugins/fugitive-gitlab.vim
 '''
 
-# [[plugins]]
-# repo = 'APZelos/blamer.nvim'
-# hook_add = '''
-  # source ~/.config/nvim/plugins/blamer.vim
-# '''
-
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
@@ -65,6 +59,12 @@ hook_add = '''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'kyazdani42/nvim-web-devicons'
+
+[[plugins]]
+repo = 'romgrk/barbar.nvim'
 
 # 自動コメントアウト
 [[plugins]]
