@@ -12,7 +12,9 @@ set wildmenu           "ステータスラインにコマンド候補を表示"
 set mouse=a            "マウス操作を有効化"
 
 let mapleader = "\<Space>"
-nnoremap <leader>q :q!<cr>
+nnoremap <leader>q :qa!<cr>
+" buffaを削除
+nnoremap <leader>b :bd<cr>
 nnoremap <leader>w :wa<cr>
 
 "折り返し時に表示行単位での移動できるようにする"
