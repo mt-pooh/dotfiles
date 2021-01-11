@@ -13,9 +13,13 @@ set mouse=a            "マウス操作を有効化"
 
 let mapleader = "\<Space>"
 nnoremap <leader>q :qa!<cr>
-" buffaを削除
+" bufferを削除
 nnoremap <leader>b :bd<cr>
 nnoremap <leader>w :wa<cr>
+" buffer移動
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <silent>bb :b#<CR>
 
 "折り返し時に表示行単位での移動できるようにする"
 nnoremap j gj
