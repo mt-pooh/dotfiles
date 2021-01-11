@@ -33,6 +33,9 @@ nnoremap <silent>bp :bprevious<CR>
 nnoremap <silent>bn :bnext<CR>
 nnoremap <silent>bb :b#<CR>
 
+" sqltmplファイルでsqlの色を付ける
+autocmd BufNewFile,BufRead *.sqltmpl  set filetype=sql
+
 "タブ、空白、改行の可視化
 set list
 "全角スペースをハイライト表示
