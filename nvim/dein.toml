@@ -39,6 +39,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'APZelos/blamer.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugins/blamer.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
@@ -72,9 +78,9 @@ hook_add = '''
 
 # 自動コメントアウト
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
+repo = 'tpope/vim-commentary'
 hook_add = '''
-  source ~/.config/nvim/plugins/nerdcommenter.vim
+  source ~/.config/nvim/plugins/commentary.vim
 '''
 
 # interacting with databases
