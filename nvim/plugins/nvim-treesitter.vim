@@ -5,7 +5,6 @@ require'nvim-treesitter.configs'.setup {
     disable = {    -- 一部の言語では無効にする
       'lua',
       'ruby',
-      'toml',
       'c_sharp',
       'vue',
     }
