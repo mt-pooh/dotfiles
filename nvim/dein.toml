@@ -41,28 +41,18 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'f-person/git-blame.nvim'
+
+[[plugins]]
 repo = 'shumphrey/fugitive-gitlab.vim'
 hook_add = '''
   source ~/.config/nvim/plugins/fugitive-gitlab.vim
 '''
 
 [[plugins]]
-repo = 'APZelos/blamer.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/blamer.vim
-'''
-
-[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
-'''
-
-# 検索時にマッチ数と順番を表示
-[[plugins]]
-repo = 'osyo-manga/vim-anzu'
-hook_add = '''
-  source ~/.config/nvim/plugins/anzu.vim
 '''
 
 [[plugins]]
