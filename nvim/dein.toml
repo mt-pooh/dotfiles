@@ -98,14 +98,15 @@ repo = 'tpope/vim-dadbod'
 [[plugins]]
 repo = 'kristijanhusak/vim-dadbod-ui'
 
+# fuzzy finder
 [[plugins]]
-repo = 'junegunn/fzf'
-build = './install --all'
-merged = 0
+repo = 'nvim-lua/popup.nvim'
 
 [[plugins]]
-repo = 'junegunn/fzf.vim'
-depends = 'fzf'
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'
 hook_add = '''
-  source ~/.config/nvim/plugins/fzf.vim
+  source ~/.config/nvim/plugins/telescope.vim
 '''
