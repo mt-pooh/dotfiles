@@ -1,12 +1,3 @@
-# typescript
-## syntax highlight
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-on_ft = ['typescript']
-## syntax highlight for JSX in Typescript
-[[plugins]]
-repo = 'peitalin/vim-jsx-typescript'
-
 # ファイラー
 [[plugins]]
 repo = 'lambdalisue/fern.vim'
