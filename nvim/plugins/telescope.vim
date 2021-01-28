@@ -6,7 +6,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 lua << EOF
 local actions = require'telescope.actions'
-require('telescope').load_extension('media_files')
 require('telescope').setup{
   defaults = {
     vimgrep_arguments = {
@@ -57,14 +56,6 @@ require('telescope').setup{
 
     -- Developer configurations: Not meant for general override
     buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
-  },
-  extensions = {
-    media_files = {
-      -- filetypes whitelist
-      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-      filetypes = {"png", "webp", "jpg", "jpeg"},
-      find_cmd = "rg" -- find command (defaults to `fd`)
-    }
   },
 }
 EOF

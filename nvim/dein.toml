@@ -64,15 +64,16 @@ hook_add = '''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-# tabをいい感じに
 [[plugins]]
 repo = 'kyazdani42/nvim-web-devicons'
 
+# tabをいい感じに
 [[plugins]]
 repo = 'romgrk/barbar.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/barbar.vim
 '''
+depends = ['kyazdani42/nvim-web-devicons']
 
 # 自動コメントアウト
 [[plugins]]
@@ -88,18 +89,23 @@ repo = 'tpope/vim-dadbod'
 [[plugins]]
 repo = 'kristijanhusak/vim-dadbod-ui'
 
-# fuzzy finder
 [[plugins]]
 repo = 'nvim-lua/popup.nvim'
 
 [[plugins]]
 repo = 'nvim-lua/plenary.nvim'
 
-[[plugins]]
-repo = 'nvim-telescope/telescope-media-files.nvim'
-
+# fuzzy finder
 [[plugins]]
 repo = 'nvim-telescope/telescope.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/telescope.vim
+'''
+depends = ['nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim']
+
+# floating terminal
+[[plugins]]
+repo = 'numtostr/FTerm.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugins/FTerm.vim
 '''
