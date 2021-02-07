@@ -5,9 +5,9 @@ if not functions -q fisher
     fish -c fisher
 end
 
-# M1 Mac用homebrew, neovimのPATHを通す
+# M1 Mac用homebrewのPATHを通す
 if uname | grep 'Darwin' > /dev/null
-  set PATH /opt/homebrew/bin /opt/homebrew/opt/python@3.9/libexec/bin $HOME/nvim-osx64/bin $PATH
+  set PATH /opt/homebrew/bin /opt/homebrew/opt/python@3.9/libexec/bin $PATH
 end
 
 # pyenv
