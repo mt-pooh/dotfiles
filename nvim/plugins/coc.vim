@@ -188,3 +188,13 @@ xnoremap          [fzf-p]gr    "sy:CocCommand   fzf-preview.ProjectGrep<Space>-F
 nnoremap <silent> [fzf-p]t     :<C-u>CocCommand fzf-preview.BufferTags<CR>
 nnoremap <silent> [fzf-p]q     :<C-u>CocCommand fzf-preview.QuickFix<CR>
 nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>s
+
+if executable('fish')
+    " use fish for embedded terminals
+    set shell=fish
+    " use bash for else
+    let $SHELL = 'bash'
+endif
+
+" Commands used for project grep
+let g:fzf_preview_grep_cmd = 'rg --line-number --no-heading --color=never'
