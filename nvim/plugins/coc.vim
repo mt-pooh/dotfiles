@@ -2,11 +2,14 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-eslint',
+  \ 'coc-fzf-preview',
   \ 'coc-python',
   \ 'coc-go',
   \ 'coc-docker',
   \ 'coc-db',
   \ 'coc-fish',
+  \ 'coc-pairs',
+  \ 'coc-prisma',
   \ 'coc-yaml',
   \ 'coc-json'
   \ ]
