@@ -68,12 +68,12 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'kyazdani42/nvim-web-devicons'
 
 # tabをいい感じに
-[[plugins]]
-repo = 'romgrk/barbar.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/barbar.vim
-'''
-depends = ['kyazdani42/nvim-web-devicons']
+# [[plugins]]
+# repo = 'romgrk/barbar.nvim'
+# hook_add = '''
+#   source ~/.config/nvim/plugins/barbar.vim
+# '''
+# depends = ['kyazdani42/nvim-web-devicons']
 
 # 自動コメントアウト
 [[plugins]]
