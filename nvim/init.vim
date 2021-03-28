@@ -10,6 +10,7 @@ set cursorline         "横のカーソルラインを表示"
 set cursorcolumn       "縦のカーソルラインを表示"
 set wildmenu           "ステータスラインにコマンド候補を表示"
 set mouse=a            "マウス操作を有効化"
+set list listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:% "タブ/改行/スペースを可視化"
 
 let mapleader = "\<Space>"
 nnoremap <leader>q :qa!<cr>
