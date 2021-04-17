@@ -44,7 +44,6 @@ starship init fish | source
 if uname -r | grep 'microsoft' > /dev/null
   set -l LOCAL_IP (cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
   set -xg DISPLAY $LOCAL_IP:0
-  set PATH $HOME/nvim-linux64/bin $PATH
 end
 
 # alias
@@ -72,4 +71,4 @@ abbr -a dps docker ps
 abbr -a dpa docker ps -a
 abbr -a di docker images
 abbr -a dex docker exec -i -t
-abbr -a dco docker-compose
+abbr -a dco docker compose

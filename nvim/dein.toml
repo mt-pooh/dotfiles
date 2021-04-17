@@ -18,14 +18,6 @@ hook_add = '''
   source ~/.config/nvim/plugins/coc.vim
 '''
 
-# syntax highlight
-[[plugins]]
-repo = 'nvim-treesitter/nvim-treesitter'
-merged = 0
-hook_add = '''
-  source ~/.config/nvim/plugins/nvim-treesitter.vim
-'''
-
 # git 差分表示
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -64,23 +56,9 @@ hook_add = '''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-[[plugins]]
-repo = 'kyazdani42/nvim-web-devicons'
-
-# tabをいい感じに
-[[plugins]]
-repo = 'romgrk/barbar.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/barbar.vim
-'''
-depends = ['kyazdani42/nvim-web-devicons']
-
 # 自動コメントアウト
 [[plugins]]
-repo = 'tpope/vim-commentary'
-hook_add = '''
-  source ~/.config/nvim/plugins/commentary.vim
-'''
+repo = 'tyru/caw.vim'
 
 # interacting with databases
 [[plugins]]
@@ -95,10 +73,3 @@ repo = 'kristijanhusak/vim-dadbod-ui'
 repo = 'junegunn/fzf'
 build = './install --all'
 merged = 0
-
-# floating terminal
-[[plugins]]
-repo = 'numtostr/FTerm.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/FTerm.vim
-'''
