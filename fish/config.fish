@@ -35,11 +35,6 @@ set PATH $GOPATH/bin $PATH
 # ghqのrootディレクトリを設定
 # git config --global ghq.root ~/repos
 
-# starship
-# install
-# curl -fsSL https://starship.rs/install.sh | bash
-starship init fish | source
-
 # WSLでGUIが使えるように
 if uname -r | grep 'microsoft' > /dev/null
   set -l LOCAL_IP (cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
