@@ -11,6 +11,9 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+
+[[plugins]]
 repo = 'neoclide/coc.nvim'
 merged = 0
 rev = 'release'
