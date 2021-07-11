@@ -59,6 +59,16 @@ hook_add = '''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
+[[plugins]]
+repo = 'kyazdani42/nvim-web-devicons'
+
+# tab manager
+[[plugins]]
+repo = 'romgrk/barbar.nvim'
+hook_add = '''
+ source ~/.config/nvim/plugins/barbar.vim
+'''
+
 # 自動コメントアウト
 [[plugins]]
 repo = 'tyru/caw.vim'
