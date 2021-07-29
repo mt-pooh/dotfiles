@@ -10,7 +10,7 @@
     "pairs",
     "git",
     "fish",
-    "python",
+    "pyright",
     "go"
   ],
   "tsserver.formatOnType": true,
@@ -26,6 +26,5 @@
       "args": ["--stdio"]
     }
   },
-  "python.jediEnabled": false,
   "diagnostic.errorSign": "💩"
 }
