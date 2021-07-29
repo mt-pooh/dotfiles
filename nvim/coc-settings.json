@@ -10,7 +10,7 @@
     "pairs",
     "git",
     "fish",
-    "pyright",
+    "python",
     "go"
   ],
   "tsserver.formatOnType": true,

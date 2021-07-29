@@ -3,7 +3,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-fzf-preview',
-  \ 'coc-python',
+  \ 'coc-pyright',
   \ 'coc-go',
   \ 'coc-docker',
   \ 'coc-db',
