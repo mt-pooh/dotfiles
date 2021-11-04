@@ -50,6 +50,15 @@ function! ZenkakuSpace()
   highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
 endfunction
 
+
+" WLS2の場合Windows側のclipboardと共有する
+if system('uname -a | grep microsoft') != ''
+  augroup myYank
+    autocmd!
+    autocmd TextYankPost * :call system('clip.exe', @")
+  augroup END
+endif"
+
 " Search and Replace
 set ignorecase
 set smartcase
