@@ -19,3 +19,17 @@ repo = 'kannokanno/previm'
 hook_add = '''
   let g:previm_open_cmd = 'open -a Google\ Chrome'
 '''
+
+[[plugins]]
+repo = 'github/copilot.vim'
+hook_add = '''
+  let g:copilot_filetypes = {
+      \ '*': v:false,
+      \ 'python': v:true,
+      \ 'typescript': v:true,
+      \ 'dockerfile': v:true,
+      \ 'yaml': v:true,
+      \ 'sh': v:true,
+      \ 'markdown': v:true,
+      \ }
+'''
