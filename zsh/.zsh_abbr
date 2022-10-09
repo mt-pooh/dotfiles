@@ -1,0 +1,18 @@
+# # ------------------------------------
+# # abbr 
+# # ------------------------------------
+
+abbr gst="git status"
+abbr gc="git commit"
+abbr gd="git diff"
+abbr gca="git commit --amend"
+abbr glo="git log --oneline"
+
+abbr d="docker"
+abbr dps="docker ps"
+abbr dpa="docker ps -a"
+abbr di="docker images"
+abbr dex="docker exec -i -t"
+abbr dco="docker compose"
+
+# abbr awsp="export AWS_PROFILE="
