@@ -35,8 +35,9 @@ hook_add = '''
   source ~/.config/nvim/plugins/fugitive.vim
 '''
 
-[[plugins]]
-repo = 'f-person/git-blame.nvim'
+# 最新のneovimでエラーになるため一旦コメントアウト
+# [[plugins]]
+# repo = 'f-person/git-blame.nvim'
 
 [[plugins]]
 repo = 'shumphrey/fugitive-gitlab.vim'
