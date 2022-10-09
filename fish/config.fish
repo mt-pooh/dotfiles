@@ -11,7 +11,7 @@ if uname | grep 'Darwin' > /dev/null
 end
 
 # pyenv
-status is-login; and pyenv init --path | source
+pyenv init - | source
 
 # nvim
 set -x XDG_CONFIG_HOME $HOME/.config
@@ -26,6 +26,8 @@ set -U FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 
 # Rust
 set PATH $HOME/.cargo/bin $PATH
+# poetry
+set PATH $HOME/.local/bin $PATH
 
 # GO
 set -Ux GOPATH $HOME/go
@@ -65,3 +67,5 @@ abbr -a dpa docker ps -a
 abbr -a di docker images
 abbr -a dex docker exec -i -t
 abbr -a dco docker compose
+
+abbr -a awsp set -gx AWS_DEFAULT_PROFILE
