@@ -1,18 +1,16 @@
 # dotfiles
 
-## Install requirement
-- neovim
-- zsh
-- pyenv
-
 ## Preparation
 For Mac
 ```
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# install pyenv
-brew install pyenv
-# symlink zsh configure file
+# symlink configure file
 ./deploy.sh
+# brew install
+brew buldle
+# reflect zsh configuration
+source ~/.zshrc
+source ~/.zsh_abbr
 ```
 
