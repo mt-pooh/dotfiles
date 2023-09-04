@@ -7,10 +7,12 @@ brew "fzf"
 brew "ghq"
 brew "neovim"
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "ripgrep"
 brew "starship"
 brew "terraform"
 brew "jesseduffield/lazygit/lazygit"
+brew "poetry"
 
 cask_args appdir: "/Applications"
 

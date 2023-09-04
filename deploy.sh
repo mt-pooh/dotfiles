@@ -1,5 +1,5 @@
 
-dotfiles=(Brewfile zsh/.zshrc zsh/.zsh_abbr)
+dotfiles=(Brewfile Brewfile.lock.json zsh/.zshrc zsh/.zsh_abbr)
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
 # ホームディレクトリ直下にシンボリックリンクを作成する
