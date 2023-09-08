@@ -13,6 +13,7 @@ brew "starship"
 brew "terraform"
 brew "jesseduffield/lazygit/lazygit"
 brew "poetry"
+brew "awscli"
 
 cask_args appdir: "/Applications"
 
@@ -28,3 +29,5 @@ cask "rancher"
 cask "raycast"
 cask "deepl"
 cask "karabiner-elements"
+cask "spotify"
+cask "google-cloud-sdk"
