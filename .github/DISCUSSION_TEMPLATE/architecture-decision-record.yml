@@ -1,0 +1,44 @@
+labels: [Architecture Decision Record]
+body:
+  - type: dropdown
+    attributes:
+      label: ステータス
+      description: この文書のステータスを選択してください。
+      options:
+        - "proposed (提案中)"
+        - "accepted (承認)"
+        - "rejected (否認)"
+        - "deprecated (廃止)"
+        - "superseded (保留)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: コンテキスト
+      description: この決定を行った状況について書いてください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 決定
+      description: 決定とその根拠について書いてください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 影響
+      description: 決定による影響や、比較・検討した内容について書いてください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: コンプライアンス
+      description: この決定が順守されていることを確認方法について書いてください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 備考
+      description: 参考文献等あれば書いてください。
+    validations:
+      required: false
